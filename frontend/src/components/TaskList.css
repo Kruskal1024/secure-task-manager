@@ -1,0 +1,174 @@
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eef0f5;
+  font-size: 15px;
+  color: #1a1a2e;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item:hover {
+  background-color: #f8f9fc;
+}
+
+.task-item-editing {
+  background-color: #f5f8ff;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.task-checkbox-label input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2f6fed;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.task-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.task-description {
+  font-size: 13px;
+  color: #6b7080;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.badge-completed {
+  background-color: #e3f7e9;
+  color: #1e8a4c;
+}
+
+.badge-pending {
+  background-color: #fdf1dc;
+  color: #b3730b;
+}
+
+.btn-edit {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2f6fed;
+  background-color: transparent;
+  border: 1px solid #c9d9fb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color: #eef3fe;
+  border-color: #2f6fed;
+}
+
+.btn-delete {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #d1435b;
+  background-color: transparent;
+  border: 1px solid #f3c6cf;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #fdeef1;
+  border-color: #d1435b;
+}
+
+.task-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.edit-input,
+.edit-textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #dcdfe8;
+  border-radius: 6px;
+  color: #1a1a2e;
+  background-color: #ffffff;
+}
+
+.edit-input:focus,
+.edit-textarea:focus {
+  outline: none;
+  border-color: #2f6fed;
+}
+
+.edit-textarea {
+  resize: vertical;
+}
+
+.btn-save {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #2f6fed;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: #2559c9;
+}
+
+.btn-cancel {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b4f5e;
+  background-color: transparent;
+  border: 1px solid #dcdfe8;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: #f2f3f7;
+}

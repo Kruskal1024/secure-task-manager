@@ -1,0 +1,47 @@
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b4f5e;
+}
+
+.form-field input,
+.form-field textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid #dcdfe8;
+  border-radius: 6px;
+  color: #1a1a2e;
+  background-color: #fbfbfd;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #2f6fed;
+  background-color: #ffffff;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.add-task-form .btn-primary {
+  align-self: flex-start;
+}
